@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<settings>
+    <Stack>
+        <FillEnabled>0</FillEnabled>
+        <OverflowWarningsEnabled>1</OverflowWarningsEnabled>
+        <WarningThreshold>90</WarningThreshold>
+        <SpWarningsEnabled>1</SpWarningsEnabled>
+        <WarnLogOnly>1</WarnLogOnly>
+        <UseTrigger>1</UseTrigger>
+        <TriggerName>main</TriggerName>
+        <LimitSize>0</LimitSize>
+        <ByteLimit>50</ByteLimit>
+    </Stack>
+    <StLinkDriver>
+        <stlinkserialNo>28410287</stlinkserialNo>
+        <stlinkfoundProbes />
+        <stlinkResetStyle>4</stlinkResetStyle>
+        <stlinkResetStrategy>2</stlinkResetStrategy>
+        <CStepIntDis>_ 0</CStepIntDis>
+        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
+    </StLinkDriver>
+    <DebugChecksum>
+        <Checksum>261254809</Checksum>
+    </DebugChecksum>
+    <Exceptions>
+        <StopOnUncaught>_ 0</StopOnUncaught>
+        <StopOnThrow>_ 0</StopOnThrow>
+    </Exceptions>
+    <CallStack>
+        <ShowArgs>0</ShowArgs>
+    </CallStack>
+    <Disassembly>
+        <MixedMode>1</MixedMode>
+    </Disassembly>
+    <struct_types>
+        <Fmt0>_RTC-Date	3	0</Fmt0>
+        <Fmt1>_RTC-DaysOfWeek	3	0</Fmt1>
+        <Fmt2>_RTC-Hour	3	0</Fmt2>
+        <Fmt3>_RTC-Min	3	0</Fmt3>
+        <Fmt4>_RTC-Month	3	0</Fmt4>
+        <Fmt5>_RTC-Sec	3	0</Fmt5>
+        <Fmt6>_RTC-Year	3	0</Fmt6>
+    </struct_types>
+    <array_types>
+        <Fmt0>uint8_t[96]	3	0</Fmt0>
+    </array_types>
+    <watch_formats>
+        <Fmt0>{W}42:id	4	0</Fmt0>
+        <Fmt1>{W}42:it_num	3	0</Fmt1>
+        <Fmt2>{W}42:max_fstat	4	0</Fmt2>
+        <Fmt3>{W}42:mode	3	0</Fmt3>
+        <Fmt4>{W}42:p_count	3	0</Fmt4>
+        <Fmt5>{W}42:pressure_buf[0]	3	0</Fmt5>
+        <Fmt6>{W}42:rtc_sec.Hour	3	0</Fmt6>
+        <Fmt7>{W}42:rtc_sec.Min	3	0</Fmt7>
+        <Fmt8>{W}42:rtc_sec.Sec	3	0</Fmt8>
+        <Fmt9>{W}42:rtc_sec_end.Hour	3	0</Fmt9>
+        <Fmt10>{W}42:rtc_sec_end.Min	3	0</Fmt10>
+        <Fmt11>{W}42:rtc_sec_end.Sec	3	0</Fmt11>
+        <Fmt12>{W}42:sec_count	3	0</Fmt12>
+        <Fmt13>{W}42:secundomer	3	0</Fmt13>
+    </watch_formats>
+    <TermIOLog>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+    </TermIOLog>
+    <LogFile>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+        <Category>_ 0</Category>
+    </LogFile>
+    <CallStackLog>
+        <Enabled>0</Enabled>
+    </CallStackLog>
+    <CallStackStripe>
+        <ShowTiming>1</ShowTiming>
+    </CallStackStripe>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints2>
+        <Count>0</Count>
+    </Breakpoints2>
+    <Aliases>
+        <Count>0</Count>
+        <SuppressDialog>0</SuppressDialog>
+    </Aliases>
+</settings>

@@ -113,7 +113,7 @@ void max_write_and_verify (uint8_t reg, uint16_t value){
 
 uint8_t max17055Init_CM4 (uint8_t loading, uint16_t reconfig){     // 1-loading saved history
   uint16_t StatusPOR = max_read_reg(0x00) & 0x0002;
-  int32_t currentCapacity = getCapacity();
+  uint32_t currentCapacity = getCapacity();
   uint8_t count=0;
   if (currentCapacity != BAT_FULLCAP && currentCapacity != BAT_FULLCAP-1) {
     StatusPOR = 1; //Force re-config

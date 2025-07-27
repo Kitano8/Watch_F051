@@ -227,9 +227,9 @@ int main(void)
   max17055_check();
   max17055Init_CM4(max_param_check,0);
   
-  if(!max_param_check){
-    SaveCalibrationVariables();
-  }
+  //if(!max_param_check){
+  //  SaveCalibrationVariables();
+  //}
   
   bmp280_init_default_params(&bmp280.params);
   bmp280.addr = BMP280_I2C_ADDRESS_0;
@@ -312,14 +312,22 @@ int main(void)
     bat_cycles=getCycles();
     batt_soc=getSOC();
     bat_res=getBat_Res_mOhm();
-    //design_cup=getCapacity();
+    design_cup=getCapacity();
     full_cup=getFullCapRep();
-    //rem_cap=getRemainingCapacity();
-    //max_temp=get_temperature();
-    //batt_time_empty=getTimeToEmpty();
-    //batt_time_full=getTimeToFull();
+    rem_cap=getRemainingCapacity();
+    max_temp=get_temperature();
+    batt_time_empty=getTimeToEmpty();
+    batt_time_full=getTimeToFull();
     max_fstat=max17055_get_fstat();
     max_status2=max17055_get_status2();
+    
+    if(max_fstat & FSTAT_EDET_BIT){     // низкое напряжение
+      if((int32_t)(batt_current*100.0f)<0){     // разряд батареи
+        if(mode==2 || mode==4){                 // энергоёмкие режимы
+          mode=0;
+        }
+      }
+    }
     
 // запрос времени с rtc. общий цикл    
     DS3231_GetTime(&rtc); 
@@ -1473,6 +1481,9 @@ void show_tacho_screen (void){
       i=0;
       batt_current=getInstantaneousCurrent();
       batt_soc=getSOC();
+      max_fstat=max17055_get_fstat();
+    
+    
       
       strcpy(TxBuffer,"");
     draw_string("0000000000000",1,ADDR_LINE_LCD(3),&Font18,BACK_COLOR);
@@ -1494,6 +1505,16 @@ void show_tacho_screen (void){
       draw_string(TxBuffer,1,ADDR_LINE_LCD(1),&Font18,MENU_COLOR);
       rpm=(uint32_t)(uwFrequency*60.0f);
     }
+    
+    if(max_fstat & FSTAT_EDET_BIT){     // низкое напряжение
+      if((int32_t)(batt_current*100.0f)<0){     // разряд батареи
+        if(mode==2 || mode==4){                 // энергоёмкие режимы
+          mode=0;
+          key=BUT_OK;
+        }
+      }
+    }
+    
   }
   while(key!=BUT_OK);
   

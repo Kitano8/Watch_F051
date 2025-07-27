@@ -1,2 +1,2 @@
-const char version_full [] = "22.07.2025.3";
-const char version_logo [] = "22.31.17";
+const char version_full [] = "27.07.2025.1";
+const char version_logo [] = "22.27.53";

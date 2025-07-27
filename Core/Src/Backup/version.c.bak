@@ -1,0 +1,2 @@
+const char version_full [] = "16.07.2025.4";
+const char version_logo [] = "00.06.10";

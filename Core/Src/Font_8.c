@@ -1,0 +1,1339 @@
+
+/*******************************************************************************
+* font
+* filename: C:/Users/Олег/Dropbox/На работе/Fonts/Font_8.xml
+* name: Font_8
+* family: MS Shell Dlg 2
+* size: 8
+* style: Normal
+* included characters:  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ЁАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяё
+* antialiasing: no
+* type: proportional
+* encoding: windows-1251
+* unicode bom: no
+*
+* preset name: Work01
+* data block size: 8 bit(s), char
+* RLE compression enabled: no
+* conversion type: Monochrome, Diffuse Dither 128
+* bits per pixel: 1
+*
+* preprocess:
+*  main scan direction: top_to_bottom
+*  line scan direction: backward
+*  inverse: yes
+*******************************************************************************/
+
+/*
+ typedef struct {
+     long int code;
+     const tImage *image;
+     } tChar;
+ typedef struct {
+     int length;
+     const tChar *chars;
+     } tFont;
+	 
+*/
+
+#include <stdint.h>
+#include "LCD.h"
+
+
+
+static const char image_data_Font_8_0x20[4] = {
+    0x00, 0x00, 0x00, 0x00
+};
+static const tImage Font_8_0x20 = { image_data_Font_8_0x20, 3, 10, 8};
+
+static const char image_data_Font_8_0x21[4] = {
+    0x01, 0x24, 0x82, 0x00
+};
+static const tImage Font_8_0x21 = { image_data_Font_8_0x21, 3, 10, 8};
+
+static const char image_data_Font_8_0x22[4] = {
+    0x02, 0x90, 0x00, 0x00
+};
+static const tImage Font_8_0x22 = { image_data_Font_8_0x22, 3, 10, 8};
+
+static const char image_data_Font_8_0x23[8] = {
+    0x00, 0x00, 0x8a, 0x30, 0xc5, 0x10, 0x00, 0x00
+};
+static const tImage Font_8_0x23 = { image_data_Font_8_0x23, 6, 10, 8};
+
+static const char image_data_Font_8_0x24[5] = {
+    0x00, 0x07, 0xa7, 0x3f, 0x00
+};
+static const tImage Font_8_0x24 = { image_data_Font_8_0x24, 4, 10, 8};
+
+static const char image_data_Font_8_0x25[10] = {
+    0x00, 0x00, 0x64, 0xa8, 0xa8, 0x56, 0x16, 0x26, 0x00, 0x00
+};
+static const tImage Font_8_0x25 = { image_data_Font_8_0x25, 8, 10, 8};
+
+static const char image_data_Font_8_0x26[8] = {
+    0x00, 0x06, 0x24, 0x6a, 0xa9, 0x1e, 0x00, 0x00
+};
+static const tImage Font_8_0x26 = { image_data_Font_8_0x26, 6, 10, 8};
+
+static const char image_data_Font_8_0x27[3] = {
+    0x08, 0x00, 0x00
+};
+static const tImage Font_8_0x27 = { image_data_Font_8_0x27, 2, 10, 8};
+
+static const char image_data_Font_8_0x28[4] = {
+    0x01, 0x29, 0x22, 0x44
+};
+static const tImage Font_8_0x28 = { image_data_Font_8_0x28, 3, 10, 8};
+
+static const char image_data_Font_8_0x29[4] = {
+    0x01, 0x22, 0x49, 0x50
+};
+static const tImage Font_8_0x29 = { image_data_Font_8_0x29, 3, 10, 8};
+
+static const char image_data_Font_8_0x2a[5] = {
+    0x00, 0x16, 0xb0, 0x00, 0x00
+};
+static const tImage Font_8_0x2a = { image_data_Font_8_0x2a, 4, 10, 8};
+
+static const char image_data_Font_8_0x2b[8] = {
+    0x00, 0x00, 0x00, 0x21, 0xe2, 0x00, 0x00, 0x00
+};
+static const tImage Font_8_0x2b = { image_data_Font_8_0x2b, 6, 10, 8};
+
+static const char image_data_Font_8_0x2c[3] = {
+    0x00, 0x01, 0x80
+};
+static const tImage Font_8_0x2c = { image_data_Font_8_0x2c, 2, 10, 8};
+
+static const char image_data_Font_8_0x2d[4] = {
+    0x00, 0x01, 0xc0, 0x00
+};
+static const tImage Font_8_0x2d = { image_data_Font_8_0x2d, 3, 10, 8};
+
+static const char image_data_Font_8_0x2e[3] = {
+    0x00, 0x01, 0x00
+};
+static const tImage Font_8_0x2e = { image_data_Font_8_0x2e, 2, 10, 8};
+
+static const char image_data_Font_8_0x2f[4] = {
+    0x00, 0x94, 0x94, 0x80
+};
+static const tImage Font_8_0x2f = { image_data_Font_8_0x2f, 3, 10, 8};
+
+static const char image_data_Font_8_0x30[5] = {
+    0x00, 0x69, 0x99, 0x97, 0x00
+};
+static const tImage Font_8_0x30 = { image_data_Font_8_0x30, 4, 10, 8};
+
+static const char image_data_Font_8_0x31[5] = {
+    0x00, 0x26, 0x22, 0x27, 0x00
+};
+static const tImage Font_8_0x31 = { image_data_Font_8_0x31, 4, 10, 8};
+
+static const char image_data_Font_8_0x32[5] = {
+    0x00, 0x61, 0x12, 0x4f, 0x00
+};
+static const tImage Font_8_0x32 = { image_data_Font_8_0x32, 4, 10, 8};
+
+static const char image_data_Font_8_0x33[5] = {
+    0x00, 0x61, 0x21, 0x1e, 0x00
+};
+static const tImage Font_8_0x33 = { image_data_Font_8_0x33, 4, 10, 8};
+
+static const char image_data_Font_8_0x34[5] = {
+    0x00, 0x22, 0x5f, 0x10, 0x00
+};
+static const tImage Font_8_0x34 = { image_data_Font_8_0x34, 4, 10, 8};
+
+static const char image_data_Font_8_0x35[5] = {
+    0x00, 0x74, 0x61, 0x1e, 0x00
+};
+static const tImage Font_8_0x35 = { image_data_Font_8_0x35, 4, 10, 8};
+
+static const char image_data_Font_8_0x36[5] = {
+    0x00, 0x74, 0xe9, 0x97, 0x00
+};
+static const tImage Font_8_0x36 = { image_data_Font_8_0x36, 4, 10, 8};
+
+static const char image_data_Font_8_0x37[5] = {
+    0x00, 0xf1, 0x22, 0x44, 0x00
+};
+static const tImage Font_8_0x37 = { image_data_Font_8_0x37, 4, 10, 8};
+
+static const char image_data_Font_8_0x38[5] = {
+    0x00, 0x79, 0x5b, 0x97, 0x00
+};
+static const tImage Font_8_0x38 = { image_data_Font_8_0x38, 4, 10, 8};
+
+static const char image_data_Font_8_0x39[5] = {
+    0x00, 0x69, 0x97, 0x16, 0x00
+};
+static const tImage Font_8_0x39 = { image_data_Font_8_0x39, 4, 10, 8};
+
+static const char image_data_Font_8_0x3a[4] = {
+    0x00, 0x04, 0x02, 0x00
+};
+static const tImage Font_8_0x3a = { image_data_Font_8_0x3a, 3, 10, 8};
+
+static const char image_data_Font_8_0x3b[4] = {
+    0x00, 0x04, 0x02, 0x40
+};
+static const tImage Font_8_0x3b = { image_data_Font_8_0x3b, 3, 10, 8};
+
+static const char image_data_Font_8_0x3c[8] = {
+    0x00, 0x00, 0x02, 0x31, 0x03, 0x02, 0x00, 0x00
+};
+static const tImage Font_8_0x3c = { image_data_Font_8_0x3c, 6, 10, 8};
+
+static const char image_data_Font_8_0x3d[8] = {
+    0x00, 0x00, 0x00, 0x78, 0x07, 0x80, 0x00, 0x00
+};
+static const tImage Font_8_0x3d = { image_data_Font_8_0x3d, 6, 10, 8};
+
+static const char image_data_Font_8_0x3e[8] = {
+    0x00, 0x00, 0x10, 0x30, 0x23, 0x10, 0x00, 0x00
+};
+static const tImage Font_8_0x3e = { image_data_Font_8_0x3e, 6, 10, 8};
+
+static const char image_data_Font_8_0x3f[5] = {
+    0x00, 0xe1, 0x24, 0x04, 0x00
+};
+static const tImage Font_8_0x3f = { image_data_Font_8_0x3f, 4, 10, 8};
+
+static const char image_data_Font_8_0x40[9] = {
+    0x00, 0x00, 0xf2, 0x96, 0xad, 0x5a, 0xaa, 0x38, 0x00
+};
+static const tImage Font_8_0x40 = { image_data_Font_8_0x40, 7, 10, 8};
+
+static const char image_data_Font_8_0x41[7] = {
+    0x00, 0x08, 0xc5, 0x2a, 0xd1, 0x00, 0x00
+};
+static const tImage Font_8_0x41 = { image_data_Font_8_0x41, 5, 10, 8};
+
+static const char image_data_Font_8_0x42[7] = {
+    0x00, 0x1c, 0xa7, 0x29, 0x2e, 0x00, 0x00
+};
+static const tImage Font_8_0x42 = { image_data_Font_8_0x42, 5, 10, 8};
+
+static const char image_data_Font_8_0x43[7] = {
+    0x00, 0x1e, 0x88, 0x42, 0x0f, 0x00, 0x00
+};
+static const tImage Font_8_0x43 = { image_data_Font_8_0x43, 5, 10, 8};
+
+static const char image_data_Font_8_0x44[7] = {
+    0x00, 0x1c, 0x94, 0xa5, 0x2e, 0x00, 0x00
+};
+static const tImage Font_8_0x44 = { image_data_Font_8_0x44, 5, 10, 8};
+
+static const char image_data_Font_8_0x45[5] = {
+    0x00, 0x74, 0x74, 0x47, 0x00
+};
+static const tImage Font_8_0x45 = { image_data_Font_8_0x45, 4, 10, 8};
+
+static const char image_data_Font_8_0x46[5] = {
+    0x00, 0x74, 0x64, 0x40, 0x00
+};
+static const tImage Font_8_0x46 = { image_data_Font_8_0x46, 4, 10, 8};
+
+static const char image_data_Font_8_0x47[7] = {
+    0x00, 0x1e, 0x88, 0x4e, 0x2f, 0x00, 0x00
+};
+static const tImage Font_8_0x47 = { image_data_Font_8_0x47, 5, 10, 8};
+
+static const char image_data_Font_8_0x48[7] = {
+    0x00, 0x02, 0x97, 0xa5, 0x21, 0x00, 0x00
+};
+static const tImage Font_8_0x48 = { image_data_Font_8_0x48, 5, 10, 8};
+
+static const char image_data_Font_8_0x49[4] = {
+    0x03, 0xa4, 0x97, 0x00
+};
+static const tImage Font_8_0x49 = { image_data_Font_8_0x49, 3, 10, 8};
+
+static const char image_data_Font_8_0x4a[4] = {
+    0x01, 0x92, 0x4e, 0x00
+};
+static const tImage Font_8_0x4a = { image_data_Font_8_0x4a, 3, 10, 8};
+
+static const char image_data_Font_8_0x4b[7] = {
+    0x00, 0x04, 0xa6, 0x31, 0x42, 0x00, 0x00
+};
+static const tImage Font_8_0x4b = { image_data_Font_8_0x4b, 5, 10, 8};
+
+static const char image_data_Font_8_0x4c[5] = {
+    0x00, 0x04, 0x44, 0x47, 0x00
+};
+static const tImage Font_8_0x4c = { image_data_Font_8_0x4c, 4, 10, 8};
+
+static const char image_data_Font_8_0x4d[8] = {
+    0x00, 0x04, 0xd3, 0x75, 0xd4, 0x41, 0x00, 0x00
+};
+static const tImage Font_8_0x4d = { image_data_Font_8_0x4d, 6, 10, 8};
+
+static const char image_data_Font_8_0x4e[7] = {
+    0x00, 0x12, 0x96, 0xb5, 0x61, 0x00, 0x00
+};
+static const tImage Font_8_0x4e = { image_data_Font_8_0x4e, 5, 10, 8};
+
+static const char image_data_Font_8_0x4f[8] = {
+    0x00, 0x07, 0x22, 0x8a, 0x28, 0x9e, 0x00, 0x00
+};
+static const tImage Font_8_0x4f = { image_data_Font_8_0x4f, 6, 10, 8};
+
+static const char image_data_Font_8_0x50[5] = {
+    0x00, 0x75, 0x56, 0x40, 0x00
+};
+static const tImage Font_8_0x50 = { image_data_Font_8_0x50, 4, 10, 8};
+
+static const char image_data_Font_8_0x51[8] = {
+    0x00, 0x07, 0x22, 0x8a, 0x28, 0x9e, 0x10, 0x20
+};
+static const tImage Font_8_0x51 = { image_data_Font_8_0x51, 6, 10, 8};
+
+static const char image_data_Font_8_0x52[7] = {
+    0x00, 0x1c, 0xa5, 0x31, 0x41, 0x00, 0x00
+};
+static const tImage Font_8_0x52 = { image_data_Font_8_0x52, 5, 10, 8};
+
+static const char image_data_Font_8_0x53[5] = {
+    0x00, 0x78, 0x43, 0x1f, 0x00
+};
+static const tImage Font_8_0x53 = { image_data_Font_8_0x53, 4, 10, 8};
+
+static const char image_data_Font_8_0x54[7] = {
+    0x00, 0x3e, 0x42, 0x10, 0x84, 0x00, 0x00
+};
+static const tImage Font_8_0x54 = { image_data_Font_8_0x54, 5, 10, 8};
+
+static const char image_data_Font_8_0x55[7] = {
+    0x00, 0x02, 0x94, 0xa5, 0x2e, 0x00, 0x00
+};
+static const tImage Font_8_0x55 = { image_data_Font_8_0x55, 5, 10, 8};
+
+static const char image_data_Font_8_0x56[7] = {
+    0x00, 0x23, 0x25, 0x29, 0x84, 0x00, 0x00
+};
+static const tImage Font_8_0x56 = { image_data_Font_8_0x56, 5, 10, 8};
+
+static const char image_data_Font_8_0x57[9] = {
+    0x00, 0x02, 0x4c, 0x96, 0xad, 0x9b, 0x32, 0x00, 0x00
+};
+static const tImage Font_8_0x57 = { image_data_Font_8_0x57, 7, 10, 8};
+
+static const char image_data_Font_8_0x58[7] = {
+    0x00, 0x24, 0xa2, 0x11, 0x52, 0x00, 0x00
+};
+static const tImage Font_8_0x58 = { image_data_Font_8_0x58, 5, 10, 8};
+
+static const char image_data_Font_8_0x59[7] = {
+    0x00, 0x22, 0xa6, 0x10, 0x84, 0x00, 0x00
+};
+static const tImage Font_8_0x59 = { image_data_Font_8_0x59, 5, 10, 8};
+
+static const char image_data_Font_8_0x5a[5] = {
+    0x00, 0xf1, 0x24, 0x4f, 0x00
+};
+static const tImage Font_8_0x5a = { image_data_Font_8_0x5a, 4, 10, 8};
+
+static const char image_data_Font_8_0x5b[4] = {
+    0x01, 0x24, 0x92, 0x4c
+};
+static const tImage Font_8_0x5b = { image_data_Font_8_0x5b, 3, 10, 8};
+
+static const char image_data_Font_8_0x5c[4] = {
+    0x02, 0x24, 0x91, 0x20
+};
+static const tImage Font_8_0x5c = { image_data_Font_8_0x5c, 3, 10, 8};
+
+static const char image_data_Font_8_0x5d[4] = {
+    0x01, 0x24, 0x92, 0x58
+};
+static const tImage Font_8_0x5d = { image_data_Font_8_0x5d, 3, 10, 8};
+
+static const char image_data_Font_8_0x5e[8] = {
+    0x00, 0x02, 0x0c, 0x48, 0x00, 0x00, 0x00, 0x00
+};
+static const tImage Font_8_0x5e = { image_data_Font_8_0x5e, 6, 10, 8};
+
+static const char image_data_Font_8_0x5f[5] = {
+    0x00, 0x00, 0x00, 0x00, 0xf0
+};
+static const tImage Font_8_0x5f = { image_data_Font_8_0x5f, 4, 10, 8};
+
+static const char image_data_Font_8_0x60[5] = {
+    0x04, 0x20, 0x00, 0x00, 0x00
+};
+static const tImage Font_8_0x60 = { image_data_Font_8_0x60, 4, 10, 8};
+
+static const char image_data_Font_8_0x61[5] = {
+    0x00, 0x00, 0x37, 0x9f, 0x00
+};
+static const tImage Font_8_0x61 = { image_data_Font_8_0x61, 4, 10, 8};
+
+static const char image_data_Font_8_0x62[5] = {
+    0x00, 0x06, 0x55, 0x57, 0x00
+};
+static const tImage Font_8_0x62 = { image_data_Font_8_0x62, 4, 10, 8};
+
+static const char image_data_Font_8_0x63[5] = {
+    0x00, 0x00, 0xf8, 0x87, 0x00
+};
+static const tImage Font_8_0x63 = { image_data_Font_8_0x63, 4, 10, 8};
+
+static const char image_data_Font_8_0x64[5] = {
+    0x00, 0x13, 0xd9, 0x97, 0x00
+};
+static const tImage Font_8_0x64 = { image_data_Font_8_0x64, 4, 10, 8};
+
+static const char image_data_Font_8_0x65[5] = {
+    0x00, 0x00, 0xff, 0x87, 0x00
+};
+static const tImage Font_8_0x65 = { image_data_Font_8_0x65, 4, 10, 8};
+
+static const char image_data_Font_8_0x66[4] = {
+    0x01, 0xe9, 0x20, 0x00
+};
+static const tImage Font_8_0x66 = { image_data_Font_8_0x66, 3, 10, 8};
+
+static const char image_data_Font_8_0x67[5] = {
+    0x00, 0x00, 0xf9, 0x97, 0x16
+};
+static const tImage Font_8_0x67 = { image_data_Font_8_0x67, 4, 10, 8};
+
+static const char image_data_Font_8_0x68[5] = {
+    0x00, 0x06, 0x55, 0x51, 0x00
+};
+static const tImage Font_8_0x68 = { image_data_Font_8_0x68, 4, 10, 8};
+
+static const char image_data_Font_8_0x69[3] = {
+    0x08, 0x28, 0x00
+};
+static const tImage Font_8_0x69 = { image_data_Font_8_0x69, 2, 10, 8};
+
+static const char image_data_Font_8_0x6a[3] = {
+    0x04, 0x55, 0x60
+};
+static const tImage Font_8_0x6a = { image_data_Font_8_0x6a, 2, 10, 8};
+
+static const char image_data_Font_8_0x6b[5] = {
+    0x00, 0x04, 0x64, 0x61, 0x00
+};
+static const tImage Font_8_0x6b = { image_data_Font_8_0x6b, 4, 10, 8};
+
+static const char image_data_Font_8_0x6c[3] = {
+    0x05, 0x55, 0x00
+};
+static const tImage Font_8_0x6c = { image_data_Font_8_0x6c, 2, 10, 8};
+
+static const char image_data_Font_8_0x6d[9] = {
+    0x00, 0x00, 0x00, 0x07, 0xca, 0x95, 0x0a, 0x00, 0x00
+};
+static const tImage Font_8_0x6d = { image_data_Font_8_0x6d, 7, 10, 8};
+
+static const char image_data_Font_8_0x6e[5] = {
+    0x00, 0x00, 0x75, 0x51, 0x00
+};
+static const tImage Font_8_0x6e = { image_data_Font_8_0x6e, 4, 10, 8};
+
+static const char image_data_Font_8_0x6f[5] = {
+    0x00, 0x00, 0xf9, 0x97, 0x00
+};
+static const tImage Font_8_0x6f = { image_data_Font_8_0x6f, 4, 10, 8};
+
+static const char image_data_Font_8_0x70[5] = {
+    0x00, 0x00, 0x75, 0x57, 0x40
+};
+static const tImage Font_8_0x70 = { image_data_Font_8_0x70, 4, 10, 8};
+
+static const char image_data_Font_8_0x71[5] = {
+    0x00, 0x00, 0xf9, 0x97, 0x11
+};
+static const tImage Font_8_0x71 = { image_data_Font_8_0x71, 4, 10, 8};
+
+static const char image_data_Font_8_0x72[4] = {
+    0x00, 0x04, 0x90, 0x00
+};
+static const tImage Font_8_0x72 = { image_data_Font_8_0x72, 3, 10, 8};
+
+static const char image_data_Font_8_0x73[5] = {
+    0x00, 0x00, 0xec, 0x2e, 0x00
+};
+static const tImage Font_8_0x73 = { image_data_Font_8_0x73, 4, 10, 8};
+
+static const char image_data_Font_8_0x74[4] = {
+    0x00, 0x69, 0x23, 0x00
+};
+static const tImage Font_8_0x74 = { image_data_Font_8_0x74, 3, 10, 8};
+
+static const char image_data_Font_8_0x75[5] = {
+    0x00, 0x00, 0x99, 0x97, 0x00
+};
+static const tImage Font_8_0x75 = { image_data_Font_8_0x75, 4, 10, 8};
+
+static const char image_data_Font_8_0x76[5] = {
+    0x00, 0x00, 0x96, 0x66, 0x00
+};
+static const tImage Font_8_0x76 = { image_data_Font_8_0x76, 4, 10, 8};
+
+static const char image_data_Font_8_0x77[8] = {
+    0x00, 0x00, 0x00, 0xb6, 0xd4, 0x92, 0x00, 0x00
+};
+static const tImage Font_8_0x77 = { image_data_Font_8_0x77, 6, 10, 8};
+
+static const char image_data_Font_8_0x78[5] = {
+    0x00, 0x00, 0x66, 0x69, 0x00
+};
+static const tImage Font_8_0x78 = { image_data_Font_8_0x78, 4, 10, 8};
+
+static const char image_data_Font_8_0x79[5] = {
+    0x00, 0x00, 0x96, 0x64, 0x44
+};
+static const tImage Font_8_0x79 = { image_data_Font_8_0x79, 4, 10, 8};
+
+static const char image_data_Font_8_0x7a[5] = {
+    0x00, 0x00, 0x64, 0x4e, 0x00
+};
+static const tImage Font_8_0x7a = { image_data_Font_8_0x7a, 4, 10, 8};
+
+static const char image_data_Font_8_0x7b[5] = {
+    0x00, 0x24, 0x4c, 0x44, 0x42
+};
+static const tImage Font_8_0x7b = { image_data_Font_8_0x7b, 4, 10, 8};
+
+static const char image_data_Font_8_0x7c[4] = {
+    0x01, 0x24, 0x92, 0x48
+};
+static const tImage Font_8_0x7c = { image_data_Font_8_0x7c, 3, 10, 8};
+
+static const char image_data_Font_8_0x7d[5] = {
+    0x00, 0x44, 0x23, 0x24, 0x48
+};
+static const tImage Font_8_0x7d = { image_data_Font_8_0x7d, 4, 10, 8};
+
+static const char image_data_Font_8_0x7e[8] = {
+    0x00, 0x00, 0x00, 0x40, 0xe0, 0x00, 0x00, 0x00
+};
+static const tImage Font_8_0x7e = { image_data_Font_8_0x7e, 6, 10, 8};
+
+static const char image_data_Font_8_0xa8[5] = {
+    0x04, 0x74, 0x74, 0x47, 0x00
+};
+static const tImage Font_8_0xa8 = { image_data_Font_8_0xa8, 4, 10, 8};
+
+static const char image_data_Font_8_0xb8[5] = {
+    0x00, 0x46, 0x9f, 0x87, 0x00
+};
+static const tImage Font_8_0xb8 = { image_data_Font_8_0xb8, 4, 10, 8};
+
+static const char image_data_Font_8_0xc0[7] = {
+    0x00, 0x08, 0xc5, 0x2a, 0xd1, 0x00, 0x00
+};
+static const tImage Font_8_0xc0 = { image_data_Font_8_0xc0, 5, 10, 8};
+
+static const char image_data_Font_8_0xc1[7] = {
+    0x00, 0x1c, 0x86, 0x29, 0x2e, 0x00, 0x00
+};
+static const tImage Font_8_0xc1 = { image_data_Font_8_0xc1, 5, 10, 8};
+
+static const char image_data_Font_8_0xc2[7] = {
+    0x00, 0x1c, 0xa7, 0x29, 0x2e, 0x00, 0x00
+};
+static const tImage Font_8_0xc2 = { image_data_Font_8_0xc2, 5, 10, 8};
+
+static const char image_data_Font_8_0xc3[5] = {
+    0x00, 0x74, 0x44, 0x40, 0x00
+};
+static const tImage Font_8_0xc3 = { image_data_Font_8_0xc3, 4, 10, 8};
+
+static const char image_data_Font_8_0xc4[7] = {
+    0x00, 0x0e, 0x94, 0xa5, 0x3f, 0x80, 0x00
+};
+static const tImage Font_8_0xc4 = { image_data_Font_8_0xc4, 5, 10, 8};
+
+static const char image_data_Font_8_0xc5[5] = {
+    0x00, 0x74, 0x74, 0x47, 0x00
+};
+static const tImage Font_8_0xc5 = { image_data_Font_8_0xc5, 4, 10, 8};
+
+static const char image_data_Font_8_0xc6[9] = {
+    0x00, 0x02, 0x4a, 0xa3, 0x47, 0x15, 0x49, 0x00, 0x00
+};
+static const tImage Font_8_0xc6 = { image_data_Font_8_0xc6, 7, 10, 8};
+
+static const char image_data_Font_8_0xc7[5] = {
+    0x00, 0xe1, 0x21, 0x1f, 0x00
+};
+static const tImage Font_8_0xc7 = { image_data_Font_8_0xc7, 4, 10, 8};
+
+static const char image_data_Font_8_0xc8[7] = {
+    0x00, 0x02, 0xb6, 0xb5, 0x29, 0x00, 0x00
+};
+static const tImage Font_8_0xc8 = { image_data_Font_8_0xc8, 5, 10, 8};
+
+static const char image_data_Font_8_0xc9[7] = {
+    0x51, 0x82, 0xb6, 0xb5, 0x29, 0x00, 0x00
+};
+static const tImage Font_8_0xc9 = { image_data_Font_8_0xc9, 5, 10, 8};
+
+static const char image_data_Font_8_0xca[7] = {
+    0x00, 0x06, 0xa6, 0x31, 0x41, 0x00, 0x00
+};
+static const tImage Font_8_0xca = { image_data_Font_8_0xca, 5, 10, 8};
+
+static const char image_data_Font_8_0xcb[7] = {
+    0x00, 0x1e, 0x94, 0xa5, 0x31, 0x00, 0x00
+};
+static const tImage Font_8_0xcb = { image_data_Font_8_0xcb, 5, 10, 8};
+
+static const char image_data_Font_8_0xcc[8] = {
+    0x00, 0x04, 0xd3, 0x75, 0xd4, 0x41, 0x00, 0x00
+};
+static const tImage Font_8_0xcc = { image_data_Font_8_0xcc, 6, 10, 8};
+
+static const char image_data_Font_8_0xcd[7] = {
+    0x00, 0x02, 0x97, 0xa5, 0x21, 0x00, 0x00
+};
+static const tImage Font_8_0xcd = { image_data_Font_8_0xcd, 5, 10, 8};
+
+static const char image_data_Font_8_0xce[8] = {
+    0x00, 0x07, 0x22, 0x8a, 0x28, 0x9e, 0x00, 0x00
+};
+static const tImage Font_8_0xce = { image_data_Font_8_0xce, 6, 10, 8};
+
+static const char image_data_Font_8_0xcf[7] = {
+    0x00, 0x1e, 0x94, 0xa5, 0x21, 0x00, 0x00
+};
+static const tImage Font_8_0xcf = { image_data_Font_8_0xcf, 5, 10, 8};
+
+static const char image_data_Font_8_0xd0[5] = {
+    0x00, 0x75, 0x56, 0x40, 0x00
+};
+static const tImage Font_8_0xd0 = { image_data_Font_8_0xd0, 4, 10, 8};
+
+static const char image_data_Font_8_0xd1[7] = {
+    0x00, 0x1e, 0x88, 0x42, 0x0f, 0x00, 0x00
+};
+static const tImage Font_8_0xd1 = { image_data_Font_8_0xd1, 5, 10, 8};
+
+static const char image_data_Font_8_0xd2[7] = {
+    0x00, 0x3e, 0x42, 0x10, 0x84, 0x00, 0x00
+};
+static const tImage Font_8_0xd2 = { image_data_Font_8_0xd2, 5, 10, 8};
+
+static const char image_data_Font_8_0xd3[7] = {
+    0x00, 0x22, 0xa5, 0x10, 0x88, 0x00, 0x00
+};
+static const tImage Font_8_0xd3 = { image_data_Font_8_0xd3, 5, 10, 8};
+
+static const char image_data_Font_8_0xd4[8] = {
+    0x00, 0x00, 0x1e, 0xa6, 0x96, 0x84, 0x00, 0x00
+};
+static const tImage Font_8_0xd4 = { image_data_Font_8_0xd4, 6, 10, 8};
+
+static const char image_data_Font_8_0xd5[7] = {
+    0x00, 0x24, 0xa2, 0x11, 0x52, 0x00, 0x00
+};
+static const tImage Font_8_0xd5 = { image_data_Font_8_0xd5, 5, 10, 8};
+
+static const char image_data_Font_8_0xd6[7] = {
+    0x00, 0x02, 0x94, 0xa5, 0x2f, 0x00, 0x00
+};
+static const tImage Font_8_0xd6 = { image_data_Font_8_0xd6, 5, 10, 8};
+
+static const char image_data_Font_8_0xd7[7] = {
+    0x00, 0x23, 0x18, 0xbc, 0x21, 0x00, 0x00
+};
+static const tImage Font_8_0xd7 = { image_data_Font_8_0xd7, 5, 10, 8};
+
+static const char image_data_Font_8_0xd8[10] = {
+    0x00, 0x00, 0x12, 0x52, 0x52, 0x52, 0x52, 0x7e, 0x00, 0x00
+};
+static const tImage Font_8_0xd8 = { image_data_Font_8_0xd8, 8, 10, 8};
+
+static const char image_data_Font_8_0xd9[10] = {
+    0x00, 0x00, 0x12, 0x52, 0x52, 0x52, 0x52, 0x7f, 0x01, 0x00
+};
+static const tImage Font_8_0xd9 = { image_data_Font_8_0xd9, 8, 10, 8};
+
+static const char image_data_Font_8_0xda[8] = {
+    0x00, 0x0c, 0x10, 0x31, 0x24, 0x8e, 0x00, 0x00
+};
+static const tImage Font_8_0xda = { image_data_Font_8_0xda, 6, 10, 8};
+
+static const char image_data_Font_8_0xdb[8] = {
+    0x00, 0x00, 0x51, 0x65, 0x55, 0x5d, 0x00, 0x00
+};
+static const tImage Font_8_0xdb = { image_data_Font_8_0xdb, 6, 10, 8};
+
+static const char image_data_Font_8_0xdc[7] = {
+    0x00, 0x00, 0x86, 0x29, 0x2e, 0x00, 0x00
+};
+static const tImage Font_8_0xdc = { image_data_Font_8_0xdc, 5, 10, 8};
+
+static const char image_data_Font_8_0xdd[7] = {
+    0x00, 0x38, 0x23, 0x84, 0x5e, 0x00, 0x00
+};
+static const tImage Font_8_0xdd = { image_data_Font_8_0xdd, 5, 10, 8};
+
+static const char image_data_Font_8_0xde[10] = {
+    0x00, 0x00, 0x1c, 0x62, 0x62, 0x62, 0x62, 0x1e, 0x00, 0x00
+};
+static const tImage Font_8_0xde = { image_data_Font_8_0xde, 8, 10, 8};
+
+static const char image_data_Font_8_0xdf[7] = {
+    0x00, 0x1c, 0xa5, 0x19, 0x50, 0x00, 0x00
+};
+static const tImage Font_8_0xdf = { image_data_Font_8_0xdf, 5, 10, 8};
+
+static const char image_data_Font_8_0xe0[5] = {
+    0x00, 0x00, 0x37, 0x9f, 0x00
+};
+static const tImage Font_8_0xe0 = { image_data_Font_8_0xe0, 4, 10, 8};
+
+static const char image_data_Font_8_0xe1[5] = {
+    0x00, 0x78, 0xf9, 0x97, 0x00
+};
+static const tImage Font_8_0xe1 = { image_data_Font_8_0xe1, 4, 10, 8};
+
+static const char image_data_Font_8_0xe2[5] = {
+    0x00, 0x00, 0x76, 0x57, 0x00
+};
+static const tImage Font_8_0xe2 = { image_data_Font_8_0xe2, 4, 10, 8};
+
+static const char image_data_Font_8_0xe3[4] = {
+    0x00, 0x04, 0x90, 0x00
+};
+static const tImage Font_8_0xe3 = { image_data_Font_8_0xe3, 3, 10, 8};
+
+static const char image_data_Font_8_0xe4[5] = {
+    0x00, 0x00, 0x75, 0x5f, 0x80
+};
+static const tImage Font_8_0xe4 = { image_data_Font_8_0xe4, 4, 10, 8};
+
+static const char image_data_Font_8_0xe5[5] = {
+    0x00, 0x00, 0xff, 0x87, 0x00
+};
+static const tImage Font_8_0xe5 = { image_data_Font_8_0xe5, 4, 10, 8};
+
+static const char image_data_Font_8_0xe6[8] = {
+    0x00, 0x00, 0x00, 0x49, 0xc6, 0xa1, 0x00, 0x00
+};
+static const tImage Font_8_0xe6 = { image_data_Font_8_0xe6, 6, 10, 8};
+
+static const char image_data_Font_8_0xe7[5] = {
+    0x00, 0x00, 0xe6, 0x2e, 0x00
+};
+static const tImage Font_8_0xe7 = { image_data_Font_8_0xe7, 4, 10, 8};
+
+static const char image_data_Font_8_0xe8[7] = {
+    0x00, 0x00, 0x01, 0x39, 0x4a, 0x00, 0x00
+};
+static const tImage Font_8_0xe8 = { image_data_Font_8_0xe8, 5, 10, 8};
+
+static const char image_data_Font_8_0xe9[7] = {
+    0x00, 0x18, 0x01, 0x39, 0x4a, 0x00, 0x00
+};
+static const tImage Font_8_0xe9 = { image_data_Font_8_0xe9, 5, 10, 8};
+
+static const char image_data_Font_8_0xea[5] = {
+    0x00, 0x00, 0x26, 0x61, 0x00
+};
+static const tImage Font_8_0xea = { image_data_Font_8_0xea, 4, 10, 8};
+
+static const char image_data_Font_8_0xeb[5] = {
+    0x00, 0x00, 0x75, 0x59, 0x00
+};
+static const tImage Font_8_0xeb = { image_data_Font_8_0xeb, 4, 10, 8};
+
+static const char image_data_Font_8_0xec[7] = {
+    0x00, 0x00, 0x05, 0xad, 0xa1, 0x00, 0x00
+};
+static const tImage Font_8_0xec = { image_data_Font_8_0xec, 5, 10, 8};
+
+static const char image_data_Font_8_0xed[7] = {
+    0x00, 0x00, 0x01, 0x39, 0x42, 0x00, 0x00
+};
+static const tImage Font_8_0xed = { image_data_Font_8_0xed, 5, 10, 8};
+
+static const char image_data_Font_8_0xee[5] = {
+    0x00, 0x00, 0xf9, 0x97, 0x00
+};
+static const tImage Font_8_0xee = { image_data_Font_8_0xee, 4, 10, 8};
+
+static const char image_data_Font_8_0xef[7] = {
+    0x00, 0x00, 0x07, 0x29, 0x42, 0x00, 0x00
+};
+static const tImage Font_8_0xef = { image_data_Font_8_0xef, 5, 10, 8};
+
+static const char image_data_Font_8_0xf0[5] = {
+    0x00, 0x00, 0x75, 0x57, 0x40
+};
+static const tImage Font_8_0xf0 = { image_data_Font_8_0xf0, 4, 10, 8};
+
+static const char image_data_Font_8_0xf1[5] = {
+    0x00, 0x00, 0xf8, 0x87, 0x00
+};
+static const tImage Font_8_0xf1 = { image_data_Font_8_0xf1, 4, 10, 8};
+
+static const char image_data_Font_8_0xf2[5] = {
+    0x00, 0x00, 0x64, 0x44, 0x00
+};
+static const tImage Font_8_0xf2 = { image_data_Font_8_0xf2, 4, 10, 8};
+
+static const char image_data_Font_8_0xf3[5] = {
+    0x00, 0x00, 0x96, 0x64, 0x44
+};
+static const tImage Font_8_0xf3 = { image_data_Font_8_0xf3, 4, 10, 8};
+
+static const char image_data_Font_8_0xf4[8] = {
+    0x00, 0x00, 0x1e, 0x96, 0x59, 0x5e, 0x10, 0x00
+};
+static const tImage Font_8_0xf4 = { image_data_Font_8_0xf4, 6, 10, 8};
+
+static const char image_data_Font_8_0xf5[5] = {
+    0x00, 0x00, 0x66, 0x69, 0x00
+};
+static const tImage Font_8_0xf5 = { image_data_Font_8_0xf5, 4, 10, 8};
+
+static const char image_data_Font_8_0xf6[7] = {
+    0x00, 0x00, 0x01, 0x29, 0x4e, 0x00, 0x00
+};
+static const tImage Font_8_0xf6 = { image_data_Font_8_0xf6, 5, 10, 8};
+
+static const char image_data_Font_8_0xf7[5] = {
+    0x00, 0x00, 0x99, 0x71, 0x00
+};
+static const tImage Font_8_0xf7 = { image_data_Font_8_0xf7, 4, 10, 8};
+
+static const char image_data_Font_8_0xf8[8] = {
+    0x00, 0x00, 0x00, 0x05, 0x55, 0x5f, 0x00, 0x00
+};
+static const tImage Font_8_0xf8 = { image_data_Font_8_0xf8, 6, 10, 8};
+
+static const char image_data_Font_8_0xf9[8] = {
+    0x00, 0x00, 0x00, 0x05, 0x55, 0x5f, 0x04, 0x00
+};
+static const tImage Font_8_0xf9 = { image_data_Font_8_0xf9, 6, 10, 8};
+
+static const char image_data_Font_8_0xfa[7] = {
+    0x00, 0x00, 0x04, 0x39, 0x4e, 0x00, 0x00
+};
+static const tImage Font_8_0xfa = { image_data_Font_8_0xfa, 5, 10, 8};
+
+static const char image_data_Font_8_0xfb[8] = {
+    0x00, 0x00, 0x00, 0x09, 0xa5, 0x9a, 0x00, 0x00
+};
+static const tImage Font_8_0xfb = { image_data_Font_8_0xfb, 6, 10, 8};
+
+static const char image_data_Font_8_0xfc[5] = {
+    0x00, 0x00, 0x06, 0x57, 0x00
+};
+static const tImage Font_8_0xfc = { image_data_Font_8_0xfc, 4, 10, 8};
+
+static const char image_data_Font_8_0xfd[5] = {
+    0x00, 0x00, 0xe7, 0x1e, 0x00
+};
+static const tImage Font_8_0xfd = { image_data_Font_8_0xfd, 4, 10, 8};
+
+static const char image_data_Font_8_0xfe[8] = {
+    0x00, 0x00, 0x00, 0x3d, 0x96, 0x46, 0x00, 0x00
+};
+static const tImage Font_8_0xfe = { image_data_Font_8_0xfe, 6, 10, 8};
+
+static const char image_data_Font_8_0xff[5] = {
+    0x00, 0x00, 0xfb, 0x59, 0x00
+};
+static const tImage Font_8_0xff = { image_data_Font_8_0xff, 4, 10, 8};
+
+
+static const tChar Font_8_array[] = {
+
+  // character: ' '
+  {0x20, &Font_8_0x20},
+
+  // character: '!'
+  {0x21, &Font_8_0x21},
+
+  // character: '"'
+  {0x22, &Font_8_0x22},
+
+  // character: '#'
+  {0x23, &Font_8_0x23},
+
+  // character: '$'
+  {0x24, &Font_8_0x24},
+
+  // character: '%'
+  {0x25, &Font_8_0x25},
+
+  // character: '&'
+  {0x26, &Font_8_0x26},
+
+  // character: '''
+  {0x27, &Font_8_0x27},
+
+  // character: '('
+  {0x28, &Font_8_0x28},
+
+  // character: ')'
+  {0x29, &Font_8_0x29},
+
+  // character: '*'
+  {0x2a, &Font_8_0x2a},
+
+  // character: '+'
+  {0x2b, &Font_8_0x2b},
+
+  // character: ','
+  {0x2c, &Font_8_0x2c},
+
+  // character: '-'
+  {0x2d, &Font_8_0x2d},
+
+  // character: '.'
+  {0x2e, &Font_8_0x2e},
+
+  // character: '/'
+  {0x2f, &Font_8_0x2f},
+
+  // character: '0'
+  {0x30, &Font_8_0x30},
+
+  // character: '1'
+  {0x31, &Font_8_0x31},
+
+  // character: '2'
+  {0x32, &Font_8_0x32},
+
+  // character: '3'
+  {0x33, &Font_8_0x33},
+
+  // character: '4'
+  {0x34, &Font_8_0x34},
+
+  // character: '5'
+  {0x35, &Font_8_0x35},
+
+  // character: '6'
+  {0x36, &Font_8_0x36},
+
+  // character: '7'
+  {0x37, &Font_8_0x37},
+
+  // character: '8'
+  {0x38, &Font_8_0x38},
+
+  // character: '9'
+  {0x39, &Font_8_0x39},
+
+  // character: ':'
+  {0x3a, &Font_8_0x3a},
+
+  // character: ';'
+  {0x3b, &Font_8_0x3b},
+
+  // character: '<'
+  {0x3c, &Font_8_0x3c},
+
+  // character: '='
+  {0x3d, &Font_8_0x3d},
+
+  // character: '>'
+  {0x3e, &Font_8_0x3e},
+
+  // character: '?'
+  {0x3f, &Font_8_0x3f},
+
+  // character: '(a)'
+  {0x40, &Font_8_0x40},
+
+  // character: 'A'
+  {0x41, &Font_8_0x41},
+
+  // character: 'B'
+  {0x42, &Font_8_0x42},
+
+  // character: 'C'
+  {0x43, &Font_8_0x43},
+
+  // character: 'D'
+  {0x44, &Font_8_0x44},
+
+  // character: 'E'
+  {0x45, &Font_8_0x45},
+
+  // character: 'F'
+  {0x46, &Font_8_0x46},
+
+  // character: 'G'
+  {0x47, &Font_8_0x47},
+
+  // character: 'H'
+  {0x48, &Font_8_0x48},
+
+  // character: 'I'
+  {0x49, &Font_8_0x49},
+
+  // character: 'J'
+  {0x4a, &Font_8_0x4a},
+
+  // character: 'K'
+  {0x4b, &Font_8_0x4b},
+
+  // character: 'L'
+  {0x4c, &Font_8_0x4c},
+
+  // character: 'M'
+  {0x4d, &Font_8_0x4d},
+
+  // character: 'N'
+  {0x4e, &Font_8_0x4e},
+
+  // character: 'O'
+  {0x4f, &Font_8_0x4f},
+
+  // character: 'P'
+  {0x50, &Font_8_0x50},
+
+  // character: 'Q'
+  {0x51, &Font_8_0x51},
+
+  // character: 'R'
+  {0x52, &Font_8_0x52},
+
+  // character: 'S'
+  {0x53, &Font_8_0x53},
+
+  // character: 'T'
+  {0x54, &Font_8_0x54},
+
+  // character: 'U'
+  {0x55, &Font_8_0x55},
+
+  // character: 'V'
+  {0x56, &Font_8_0x56},
+
+  // character: 'W'
+  {0x57, &Font_8_0x57},
+
+  // character: 'X'
+  {0x58, &Font_8_0x58},
+
+  // character: 'Y'
+  {0x59, &Font_8_0x59},
+
+  // character: 'Z'
+  {0x5a, &Font_8_0x5a},
+
+  // character: '['
+  {0x5b, &Font_8_0x5b},
+
+  // character: '\'
+  {0x5c, &Font_8_0x5c},
+
+  // character: ']'
+  {0x5d, &Font_8_0x5d},
+
+  // character: '^'
+  {0x5e, &Font_8_0x5e},
+
+  // character: '_'
+  {0x5f, &Font_8_0x5f},
+
+  // character: '`'
+  {0x60, &Font_8_0x60},
+
+  // character: 'a'
+  {0x61, &Font_8_0x61},
+
+  // character: 'b'
+  {0x62, &Font_8_0x62},
+
+  // character: 'c'
+  {0x63, &Font_8_0x63},
+
+  // character: 'd'
+  {0x64, &Font_8_0x64},
+
+  // character: 'e'
+  {0x65, &Font_8_0x65},
+
+  // character: 'f'
+  {0x66, &Font_8_0x66},
+
+  // character: 'g'
+  {0x67, &Font_8_0x67},
+
+  // character: 'h'
+  {0x68, &Font_8_0x68},
+
+  // character: 'i'
+  {0x69, &Font_8_0x69},
+
+  // character: 'j'
+  {0x6a, &Font_8_0x6a},
+
+  // character: 'k'
+  {0x6b, &Font_8_0x6b},
+
+  // character: 'l'
+  {0x6c, &Font_8_0x6c},
+
+  // character: 'm'
+  {0x6d, &Font_8_0x6d},
+
+  // character: 'n'
+  {0x6e, &Font_8_0x6e},
+
+  // character: 'o'
+  {0x6f, &Font_8_0x6f},
+
+  // character: 'p'
+  {0x70, &Font_8_0x70},
+
+  // character: 'q'
+  {0x71, &Font_8_0x71},
+
+  // character: 'r'
+  {0x72, &Font_8_0x72},
+
+  // character: 's'
+  {0x73, &Font_8_0x73},
+
+  // character: 't'
+  {0x74, &Font_8_0x74},
+
+  // character: 'u'
+  {0x75, &Font_8_0x75},
+
+  // character: 'v'
+  {0x76, &Font_8_0x76},
+
+  // character: 'w'
+  {0x77, &Font_8_0x77},
+
+  // character: 'x'
+  {0x78, &Font_8_0x78},
+
+  // character: 'y'
+  {0x79, &Font_8_0x79},
+
+  // character: 'z'
+  {0x7a, &Font_8_0x7a},
+
+  // character: '{'
+  {0x7b, &Font_8_0x7b},
+
+  // character: '|'
+  {0x7c, &Font_8_0x7c},
+
+  // character: '}'
+  {0x7d, &Font_8_0x7d},
+
+  // character: '~'
+  {0x7e, &Font_8_0x7e},
+
+  // character: 'Ё'
+  {0xa8, &Font_8_0xa8},
+
+  // character: 'ё'
+  {0xb8, &Font_8_0xb8},
+
+  // character: 'А'
+  {0xc0, &Font_8_0xc0},
+
+  // character: 'Б'
+  {0xc1, &Font_8_0xc1},
+
+  // character: 'В'
+  {0xc2, &Font_8_0xc2},
+
+  // character: 'Г'
+  {0xc3, &Font_8_0xc3},
+
+  // character: 'Д'
+  {0xc4, &Font_8_0xc4},
+
+  // character: 'Е'
+  {0xc5, &Font_8_0xc5},
+
+  // character: 'Ж'
+  {0xc6, &Font_8_0xc6},
+
+  // character: 'З'
+  {0xc7, &Font_8_0xc7},
+
+  // character: 'И'
+  {0xc8, &Font_8_0xc8},
+
+  // character: 'Й'
+  {0xc9, &Font_8_0xc9},
+
+  // character: 'К'
+  {0xca, &Font_8_0xca},
+
+  // character: 'Л'
+  {0xcb, &Font_8_0xcb},
+
+  // character: 'М'
+  {0xcc, &Font_8_0xcc},
+
+  // character: 'Н'
+  {0xcd, &Font_8_0xcd},
+
+  // character: 'О'
+  {0xce, &Font_8_0xce},
+
+  // character: 'П'
+  {0xcf, &Font_8_0xcf},
+
+  // character: 'Р'
+  {0xd0, &Font_8_0xd0},
+
+  // character: 'С'
+  {0xd1, &Font_8_0xd1},
+
+  // character: 'Т'
+  {0xd2, &Font_8_0xd2},
+
+  // character: 'У'
+  {0xd3, &Font_8_0xd3},
+
+  // character: 'Ф'
+  {0xd4, &Font_8_0xd4},
+
+  // character: 'Х'
+  {0xd5, &Font_8_0xd5},
+
+  // character: 'Ц'
+  {0xd6, &Font_8_0xd6},
+
+  // character: 'Ч'
+  {0xd7, &Font_8_0xd7},
+
+  // character: 'Ш'
+  {0xd8, &Font_8_0xd8},
+
+  // character: 'Щ'
+  {0xd9, &Font_8_0xd9},
+
+  // character: 'Ъ'
+  {0xda, &Font_8_0xda},
+
+  // character: 'Ы'
+  {0xdb, &Font_8_0xdb},
+
+  // character: 'Ь'
+  {0xdc, &Font_8_0xdc},
+
+  // character: 'Э'
+  {0xdd, &Font_8_0xdd},
+
+  // character: 'Ю'
+  {0xde, &Font_8_0xde},
+
+  // character: 'Я'
+  {0xdf, &Font_8_0xdf},
+
+  // character: 'а'
+  {0xe0, &Font_8_0xe0},
+
+  // character: 'б'
+  {0xe1, &Font_8_0xe1},
+
+  // character: 'в'
+  {0xe2, &Font_8_0xe2},
+
+  // character: 'г'
+  {0xe3, &Font_8_0xe3},
+
+  // character: 'д'
+  {0xe4, &Font_8_0xe4},
+
+  // character: 'е'
+  {0xe5, &Font_8_0xe5},
+
+  // character: 'ж'
+  {0xe6, &Font_8_0xe6},
+
+  // character: 'з'
+  {0xe7, &Font_8_0xe7},
+
+  // character: 'и'
+  {0xe8, &Font_8_0xe8},
+
+  // character: 'й'
+  {0xe9, &Font_8_0xe9},
+
+  // character: 'к'
+  {0xea, &Font_8_0xea},
+
+  // character: 'л'
+  {0xeb, &Font_8_0xeb},
+
+  // character: 'м'
+  {0xec, &Font_8_0xec},
+
+  // character: 'н'
+  {0xed, &Font_8_0xed},
+
+  // character: 'о'
+  {0xee, &Font_8_0xee},
+
+  // character: 'п'
+  {0xef, &Font_8_0xef},
+
+  // character: 'р'
+  {0xf0, &Font_8_0xf0},
+
+  // character: 'с'
+  {0xf1, &Font_8_0xf1},
+
+  // character: 'т'
+  {0xf2, &Font_8_0xf2},
+
+  // character: 'у'
+  {0xf3, &Font_8_0xf3},
+
+  // character: 'ф'
+  {0xf4, &Font_8_0xf4},
+
+  // character: 'х'
+  {0xf5, &Font_8_0xf5},
+
+  // character: 'ц'
+  {0xf6, &Font_8_0xf6},
+
+  // character: 'ч'
+  {0xf7, &Font_8_0xf7},
+
+  // character: 'ш'
+  {0xf8, &Font_8_0xf8},
+
+  // character: 'щ'
+  {0xf9, &Font_8_0xf9},
+
+  // character: 'ъ'
+  {0xfa, &Font_8_0xfa},
+
+  // character: 'ы'
+  {0xfb, &Font_8_0xfb},
+
+  // character: 'ь'
+  {0xfc, &Font_8_0xfc},
+
+  // character: 'э'
+  {0xfd, &Font_8_0xfd},
+
+  // character: 'ю'
+  {0xfe, &Font_8_0xfe},
+
+  // character: 'я'
+  {0xff, &Font_8_0xff}
+
+};
+
+
+const tFont Font_8 = { 161, Font_8_array };
+
